@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info"
+            android:iconTint="?attr/tintcolor"
+            android:title="@string/menu_about" />
+        <item
+            android:id="@+id/nav_term"
+            android:icon="@drawable/ic_con"
+            android:iconTint="?attr/tintcolor"
+            android:title="@string/menu_TandC" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/ic_privacy"
+            android:iconTint="?attr/tintcolor"
+            android:title="@string/menu_privacy" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:iconTint="?attr/tintcolor"
+            android:title="@string/menu_share" />
+    </group>
+
+    <item  android:title="@string/social_media">
+
+    <item
+        android:id="@+id/nav-insta"
+        android:iconTint="?attr/tintcolor"
+        android:icon="@drawable/ic_instagram"
+        android:title="@string/menu_insta" />
+    </item>
+
+</menu>

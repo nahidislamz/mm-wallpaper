@@ -1,0 +1,40 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "46bdb5b8b1187bfbb4d56633f52c830e",
+    "entities": [
+      {
+        "tableName": "fav_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`image` TEXT NOT NULL, `time` TEXT, PRIMARY KEY(`image`))",
+        "fields": [
+          {
+            "fieldPath": "image",
+            "columnName": "image",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "time",
+            "columnName": "time",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "image"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '46bdb5b8b1187bfbb4d56633f52c830e')"
+    ]
+  }
+}

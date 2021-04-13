@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs size="20"
+    space="20">
+
+    <tab
+        inactiveColor="#909090"
+        activeColor="#fff"
+        drawable="@drawable/ic_explore"/>
+
+    <tab
+        inactiveColor="#909090"
+        activeColor="#fff"
+        drawable="@drawable/ic_category"/>
+
+</tabs>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    tools:context=".HomeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/appbar"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+        <com.legendmohe.slidingdrawabletablayout.SlidingDrawableTabLayout
+            android:id="@+id/tabs"
+            android:layout_margin="5dp"
+            app:tabTextColor="#fff"
+            app:tabSelectedTextColor="#3F51B5"
+            app:tabBackground="@android:color/transparent"
+            android:background="@drawable/auto_main_tablayout_bg"
+            app:slidingBackground="@drawable/sliding_bg"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <com.legendmohe.slidingdrawabletablayout.TabItem
+                android:id="@+id/exploreTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00000000"
+                style="@style/tab_item"
+
+                />
+
+            <com.legendmohe.slidingdrawabletablayout.TabItem
+                android:id="@+id/categoryTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_category"
+                android:backgroundTint="#00000000"
+                style="@style/tab_item"
+                />
+
+        </com.legendmohe.slidingdrawabletablayout.SlidingDrawableTabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:background="?attr/backgroundcolor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

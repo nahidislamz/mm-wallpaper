@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="appbar">@color/colorPrimary</item>
+        <item name="backgroundcolor">#D9D9D9</item>
+        <item name="cardbackground">#D9D9D9</item>
+        <item name="textcolor">#646464</item>
+        <item name="tintcolor">#000000</item>
+        <item name="buttoncolor">#2196F3</item>
+        <item name="icontint">#303030</item>
+        iconTint
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="darktheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#303038</item>
+        <item name="colorPrimaryDark">#303038</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">#303038</item>
+        <item name="cardbackground">#303035</item>
+        <item name="textcolor">#ffffff</item>
+        <item name="tintcolor">#ffffff</item>
+        <item name="buttoncolor">#2196F3</item>
+        <item name="icontint">#CBCBCB</item>
+        <item name="appbar">#303038</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemBackground">@drawable/background_bottom_nav_item</item>
+        <item name="itemIconTint">@drawable/color_bottom_nav_item</item>
+        <item name="itemTextColor">@drawable/color_bottom_nav_item</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.BottomNavigation.Overline</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.BottomNavigation.Overline
+        </item>
+        <item name="android:textAllCaps">true</item>
+        <item name="paddingStart">32dp</item>
+        <item name="paddingEnd">32dp</item>
+    </style>
+
+    <style name="TextAppearance.BottomNavigation.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:textSize">8sp</item>
+    </style>
+
+
+    <style name="tab_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+</resources>
